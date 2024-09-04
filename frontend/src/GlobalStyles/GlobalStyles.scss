@@ -1,0 +1,158 @@
+@import 'normalize.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+
+#body_chapter {
+  background-image: none;
+  background-color: #f4f4f4;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url(//static.8cache.com/img/bg.jpg) top center repeat-x #f4f4f4;
+  color: #4e4e4e;
+}
+
+.dark-theme {
+  background-image: url(https://static.8cache.com/img/bg_dark.gif);
+  background-color: #232323;
+  background-repeat: repeat;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.App {
+  min-height: 100%;
+  min-height: calc(100% - 117px);
+  height: auto !important;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  min-height: calc(100% - 117px);
+  height: auto !important;
+  height: 100%;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: inherit;
+  display: inline-block;
+}
+
+a {
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.btn {
+  --bs-btn-font-size: initial;
+  font-size: var(--bs-btn-font-size);
+}
+
+.btn-primary {
+  --bs-btn-color: initial;
+  --bs-btn-bg: initial;
+  --bs-btn-border-color: initial;
+  --bs-btn-hover-color: initial;
+  --bs-btn-hover-bg: initial;
+  --bs-btn-hover-border-color: initial;
+  --bs-btn-focus-shadow-rgb: initial;
+  --bs-btn-active-color: initial;
+  --bs-btn-active-bg: #2f566d;
+  --bs-btn-active-border-color: initial;
+  --bs-btn-active-shadow: initial;
+  --bs-btn-disabled-color: initial;
+  --bs-btn-disabled-bg: initial;
+  --bs-btn-disabled-border-color: initial;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.dropdown-menu[data-bs-popper] {
+  margin-top: 0px;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #14425d;
+}
+
+.navbar-collapse {
+  flex-grow: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+// Fonts emmbeded
+
+@font-face {
+  font-family: Bookerly;
+  src: url('../assets/fonts/bookerly.ttf');
+}
+
+@font-face {
+  font-family: Minion;
+  src: url('../assets/fonts/Minion.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../assets/fonts/Roboto-Regular.woff');
+}
+
+@font-face {
+  font-family: RobotoCondensed;
+  src: url('../assets/fonts/RobotoCondensed-Regular.woff');
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}

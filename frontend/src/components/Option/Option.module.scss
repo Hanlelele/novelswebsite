@@ -1,0 +1,58 @@
+.drow-menu {
+  background-color: #2f566d;
+  border: 0px;
+  border-radius: 0px;
+  margin-top: 0px;
+}
+
+.form-control {
+  color: #555;
+}
+
+.dropdown-menu-right {
+  left: auto !important;
+  right: 0;
+}
+
+.settings {
+  padding: 10px;
+  width: 300px;
+}
+
+.settings > form > div {
+  color: #f9f9f9;
+  text-align: right;
+  font-size: 14px;
+}
+
+.control-label {
+  padding-top: 6px;
+  margin-bottom: 0;
+}
+
+.drow-menu > a:hover {
+  text-decoration: none !important;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group-sm .form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.form-group-sm select.form-control {
+  height: 30px;
+}
+
+.form-check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px;
+}

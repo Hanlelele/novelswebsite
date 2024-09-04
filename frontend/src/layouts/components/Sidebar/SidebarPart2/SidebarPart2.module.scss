@@ -1,0 +1,247 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list-index {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.title-list > h2,
+.title-list > h4 {
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #4e4e4e;
+  text-transform: uppercase;
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+.col-time {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.list > .row > div:first-child {
+  border-left: 0;
+  padding-left: 0;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+}
+
+.row > div {
+  height: 40px;
+  line-height: 40px;
+  border-left: 1px dashed #ccc;
+  border-bottom: 1px dashed #ccc;
+  overflow: hidden;
+}
+
+.row > .col-title {
+  border-left: 0px;
+}
+
+.list-index .col-truyen-side .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list-index .col-truyen-main .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-title {
+  border-right: 1px;
+}
+
+.list h3 {
+  display: inline;
+}
+
+.text-info,
+.text-info a {
+  color: #31708f;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.col-truyen-side .list > .row > div {
+  max-width: 270px;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .col-truyen-side {
+    top: 0;
+    right: 0;
+    position: absolute;
+    padding: 0 0 0 15px;
+  }
+
+  .list-truyen {
+    margin: 0 0 10px;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .col-truyen-side {
+    display: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .col-truyen-main {
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-truyen-main {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+.col-truyen-side .list {
+  background-color: #ecf0f1;
+  border: 1px solid #d9e1e4;
+}
+
+.col-truyen-side .list.list-cat > .row > div:nth-child(odd) {
+  padding-left: 40px !important;
+}
+
+.col-truyen-side .list.list-cat > .row > div {
+  height: 30px !important;
+  line-height: 35px !important;
+  border: 0 !important;
+  padding-left: 20px !important;
+}
+
+.col-truyen-side .list > .row {
+  background-color: #ecf0f1;
+}
+
+.list > .row {
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+  font-size: 13px;
+}
+
+@media (min-width: 1025px) {
+  .list {
+    border: 0;
+  }
+}
+
+.list > .row:last-child > div {
+  border-bottom: 0 !important;
+}
+
+@media (max-width: 1200px) {
+  .list-cat > .row {
+    font-size: 14px;
+  }
+}
+
+.genreText :hover {
+  color: #31708f;
+}
+
+////------- DARK -------////
+
+.dark-theme .title-list,
+.dark-theme .title-list > h4 {
+  border-bottom: 0;
+}
+
+.dark-theme .title-list > h2,
+.dark-theme .title-list > h2 > a,
+.dark-theme .title-list > h4 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.dark-theme .form-control {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.3);
+  background: #1c242d;
+  border: 1px solid #192128;
+  color: white;
+}
+.dark-theme .new-select,
+.dark-theme #intro-index .new-select,
+.dark-theme .filter {
+  background-color: #2d3741;
+  box-shadow: 0 0 3px rgba(10, 10, 10, 0.4);
+}
+
+.dark-theme a {
+  color: #b1b1b1;
+}
+
+.list-index .list h3 a {
+  font-size: 16px;
+}
+
+.dark-theme .list > .row:nth-child(2n),
+.dark-theme .col-truyen-side .list > .row:nth-child(2n) {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.dark-theme .list > .row > div {
+  border-left: 0;
+  border-bottom: 0;
+}
+
+.dark-theme .col-truyen-side .list {
+  background-color: initial;
+  border: 0px;
+}
+
+.dark-theme .text-info a {
+  color: #a9cf54;
+}

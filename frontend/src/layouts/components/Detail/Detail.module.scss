@@ -1,0 +1,391 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.col-xs-12 {
+  float: left;
+}
+
+@media (min-width: 576px) {
+  .info-holder,
+  .desc {
+    float: left;
+  }
+}
+
+.truyen {
+  font-size: 13px;
+}
+
+.col-truyen-main {
+  padding: 0 !important;
+}
+
+.col-info-desc {
+  margin-bottom: 5px;
+  padding: 0px !important;
+  height: auto;
+}
+
+//// THONG TIN TRUYEN
+.title-list {
+  text-align: left;
+  height: 40px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.title-list > h2,
+.title-list > h4 {
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-bottom: 1px solid #4e4e4e;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 5px;
+  padding: 0 15px 7px;
+  border-bottom: 1px solid #b5b5b5;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+  float: right;
+  width: 66%;
+  text-align: center;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+@media (max-width: 767px) {
+  .col-info-desc h3.title {
+    padding: 0 5px 7px;
+    border-bottom: 0;
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .csstransforms3d .books {
+    margin: 15px auto 30px;
+  }
+
+  .csstransforms3d .book {
+    position: relative;
+    transform: perspective(300px) rotateY(-3deg); /* Sử dụng thuộc tính chuẩn mà không cần tiền tố */
+    outline: 1px solid transparent;
+    box-shadow: 12px 5px 20px #333;
+    margin: 0;
+    width: 215px;
+  }
+}
+
+.image {
+  max-width: 100%;
+  height: 320px;
+}
+
+@media (min-width: 1200px) {
+  .csstransforms3d .book:before {
+    width: 100%;
+    left: 7.5%;
+    background-color: #000;
+  }
+
+  .csstransforms3d .book:after {
+    width: 5%;
+    left: 100%;
+    background-color: #efefef;
+    box-shadow: inset 0px 0px 5px #aaa;
+    transform: perspective(300px) rotateY(20deg); /* Sử dụng thuộc tính chuẩn */
+  }
+
+  .csstransforms3d .book:before,
+  .csstransforms3d .book:after {
+    position: absolute;
+    top: 2%;
+    height: 96%;
+    content: ' ';
+    z-index: -1;
+  }
+}
+
+.info {
+  padding: 10px;
+  border-right: 1px solid #ddd;
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+}
+
+.info h3 {
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .info-holder .books {
+    text-align: center;
+    height: 322px;
+  }
+}
+
+.desc {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.desc .desc-text {
+  margin-top: 10px;
+  height: 204px;
+  font-size: 12px;
+  overflow: hidden;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+}
+
+.desc .showmore {
+  margin-top: 10px;
+  text-align: right;
+  position: relative;
+  height: 22px;
+}
+
+.showfull {
+  height: auto !important;
+}
+
+.desc .showmore {
+  text-align: right;
+  position: relative;
+  height: 22px;
+}
+
+.desc .showmore a {
+  background-color: #f4f4f4;
+  margin-top: 5px;
+}
+
+.btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.list-chapter {
+  list-style: none;
+  padding-left: 15px;
+  text-align: left;
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.list-chapter-first {
+  width: 100%;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.list-chapter > li {
+  padding: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.iconlist {
+  margin-bottom: 1px;
+}
+
+.glyphicon-certificate {
+  font-size: 10px;
+}
+
+.list-chapter > li > a {
+  font-size: 15px;
+  line-height: 18px;
+  display: inline;
+  margin: 0;
+}
+
+// TRUYEN DANG HOT
+
+@media (min-width: 992px) {
+  .col-truyen-side {
+    padding: 0 0 0 7.5px !important;
+  }
+  .col-truyen-side .list.list-truyen {
+    margin: 10px 0;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .visible-lg-block {
+    display: none;
+  }
+}
+
+.col-truyen-side .list.list-side {
+  background-color: transparent;
+  border: 0;
+}
+
+.list {
+  text-align: left;
+}
+
+.list > .row {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Condensed', Tahoma, sans-serif;
+  font-size: 15px;
+}
+
+.col-truyen-side .list > .row > div {
+  max-width: 270px;
+  padding: 0;
+}
+
+.list-side > .row > div {
+  padding: 6px 10px 0 !important;
+  font-size: 12px;
+}
+
+.list > .row > div {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.top-num {
+  margin: 2px 10px 10px 0;
+  width: 31px;
+  height: 31px;
+  border: #cbcbcb solid 1px;
+  text-align: center;
+  line-height: 29px;
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+.info_top {
+  max-width: 190px;
+}
+
+.s-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+}
+
+.list-side h3 a {
+  color: #083767;
+  font-size: 15px;
+}
+
+.top-1 {
+  color: #fff;
+  border: #e74c3c solid 1px;
+  background-color: #e74c3c;
+}
+
+.top-2 {
+  color: #fff;
+  background-color: #5eb949;
+  border-color: #5eb949;
+}
+
+.top-3 {
+  color: #fff;
+  border: #5cabb8 solid 1px;
+  background-color: #5cabb8;
+}
+
+//DARK
+
+.dark-theme .list-chapter-first {
+  background: transparent;
+}
+
+.dark-theme a {
+  color: #b1b1b1;
+}
+
+.dark-theme .title-list > h2,
+.dark-theme .title-list > h4 {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+.dark-theme .title-list,
+.dark-theme .title-list > h2,
+.dark-theme .title-list > h4 {
+  border-bottom: 0;
+}
+
+.dark-theme .col-info-desc h3.title {
+  border-bottom-color: #000;
+}
+
+.dark-theme .s-title h3 a {
+  color: #a9cf54;
+}
+
+.dark-theme .desc .showmore a {
+  color: #b1b1b1;
+  border-color: #435361;
+  background-image: url(https://static.8cache.com/img/bg_dark.gif);
+  background-color: #232323;
+  background-repeat: repeat;
+}
