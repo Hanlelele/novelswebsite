@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
 // import Button from 'react-bootstrap/esm/Button';
-
+import Loading from '~/components/Loading/Loading';
 import Search from '~/components/Search';
 
 import { useType } from '~/typeContext';
@@ -81,6 +81,9 @@ function Header() {
     setSelectedGenre(genreName);
   };
 
+  if (!types || !genres) {
+    return <Loading />;
+  }
   return (
     <div className={cx({ 'dark-theme': isDark === 'true' }, 'wrapper', 'mb-3', fadeClass, { 'display-none': full })}>
       <Navbar expand="lg">

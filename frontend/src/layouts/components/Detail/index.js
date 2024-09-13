@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import Pagination from '~/components/Pagination';
-
+import Loading from '~/components/Loading/Loading';
 import { getDetailOfNovels, getNovelsByGenre } from '~/services/getApiService';
 
 import classnames from 'classnames/bind';
@@ -42,7 +42,7 @@ function Detail() {
 
   // Check if detailNovel has the necessary properties before rendering
   if (!detailNovel.title) {
-    return <div>Loading...</div>; // Or a better loading indicator
+    return <Loading />; 
   }
 
   const handlePageChange = (page) => {

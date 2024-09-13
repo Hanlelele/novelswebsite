@@ -4,7 +4,7 @@ import { faBook, faPencil } from '@fortawesome/free-solid-svg-icons';
 import Pagination from '~/components/Pagination';
 
 import { useSelector } from 'react-redux';
-
+import Loading from '~/components/Loading/Loading';
 import { useType } from '~/typeContext';
 import classnames from 'classnames/bind';
 import styles from './Category.module.scss';
@@ -71,6 +71,9 @@ function Category() {
     setSelectedGenre(genreName);
   };
 
+  if (!novels) {
+    return <Loading />;
+  }
   return (
     <div className={cx({ 'dark-theme': isDark === 'true' }, 'container', 'list-page')} id="list-page">
       <div className="row">

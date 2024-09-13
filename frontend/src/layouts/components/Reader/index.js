@@ -7,6 +7,7 @@ import {
   faRectangleList,
 } from '@fortawesome/free-solid-svg-icons';
 
+import Loading from '~/components/Loading/Loading';
 import classnames from 'classnames/bind';
 import styles from './Reader.module.scss';
 import { useEffect } from 'react';
@@ -99,7 +100,7 @@ function Reader() {
   }, [novel, idChapter, dispatch]);
 
   if (!chapter.title) {
-    return <div>Loading...</div>; // Or a better loading indicator
+    return <Loading/>; 
   }
 
   return (

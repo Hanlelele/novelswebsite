@@ -3,6 +3,7 @@ import { faGripfire } from '@fortawesome/free-brands-svg-icons';
 
 import { useSelector } from 'react-redux';
 
+import Loading from '~/components/Loading/Loading';
 import { Link } from 'react-router-dom';
 import { getHotNovels } from '~/services/getApiService';
 import classnames from 'classnames/bind';
@@ -13,6 +14,7 @@ const cx = classnames.bind(styles);
 function SidebarPart1() {
   const [hotNovels, setHotNovels] = useState([]);
   const { isDark } = useSelector((state) => state.styles);
+
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -26,6 +28,10 @@ function SidebarPart1() {
 
     fetchApi();
   }, []);
+
+  if (!hotNovels) {
+    return <Loading />; 
+  }
 
   return (
     <div className={cx({ 'dark-theme': isDark === 'true' }, 'container', 'mt-4', 'intro-index')} id="intro-index">

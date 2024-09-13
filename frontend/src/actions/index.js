@@ -1,5 +1,3 @@
-import Cookies from 'js-cookie';
-
 export const SET_FONT_SIZE = 'SET_FONT_SIZE';
 export const SET_LINE_HEIGHT = 'SET_LINE_HEIGHT';
 export const SET_FULL_SCREEN = 'SET_FULL_SCREEN';

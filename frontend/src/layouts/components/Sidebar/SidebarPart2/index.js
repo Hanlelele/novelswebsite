@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { getHeaderData, getNewNovels } from '~/services/getApiService';
 
 import { useType } from '~/typeContext';
-
+import Loading from '~/components/Loading/Loading';
 import classnames from 'classnames/bind';
 import styles from './SidebarPart2.module.scss';
 import { Link } from 'react-router-dom';
@@ -70,6 +70,9 @@ function SideBarPart2() {
     }
   }
 
+  if (!newNovels || !genres) {
+    return <Loading />;
+  }
   return (
     <div className={cx({ 'dark-theme': isDark === 'true' }, 'container', 'list-index')} id="list-index">
       <div className={cx('list', 'list-truyen', 'col-12', 'col-sm-12', 'col-md-8', 'col-lg-8', 'col-truyen-main')}>
